@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px){
+    .App{
+        grid-template-columns: repeat(1, 100%);
+        .aside{
+            display: none;
+        }
+
+        main{
+            grid-column: 1 / 2;
+
+        }
+    }
+
+    div.container{
+        &::after{
+            width: 80px !important;
+            height: 50px !important;
+            top: -25px !important;
+            right: -40px !important;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 2rem;
+    }
+    
+    div.container{
+        &::after{
+            display: none;
+        }
+    }
+}

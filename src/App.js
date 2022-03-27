@@ -12,6 +12,7 @@
 /*########*/import About from './Pages/About';
 
 import './App.scss';
+import './Responsive.scss';
 
 function App() {
 
