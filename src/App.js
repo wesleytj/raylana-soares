@@ -2,6 +2,9 @@
 /*########*//*-----===== REACT =====----- */
 /*########*/import React from 'react';
 
+/*########*//*-----===== COMPONENTES =====----- */
+/*########*/import Aside from './Components/Aside';
+
 /*########*//*-----===== PAGINAS =====----- */
 /*########*/import Home from './Pages/Home';
 
@@ -11,7 +14,9 @@ function App() {
   return (
     <div className="App">
       <header></header>
-      <div className='aside'></div>
+      <div className='aside'>
+        <Aside />
+      </div>
       <main>
         <Home />
       </main>
