@@ -32,7 +32,7 @@
 
     display        : flex;
     align-items    : center;
-    justify-content: center;
+    // justify-content: center;
   }
 
   footer {
@@ -43,11 +43,30 @@
   }
 
   div.container {
-    width          : 100%;
-    height         : 100%;
+    width          : 80%;
+    height         : 80%;
     display        : flex;
     align-items    : center;
     justify-content: center;
-    padding        : 0 2%;
+    padding        : 2% 2%;
+    position: relative;
+
+    border-radius: 5px;
+    backdrop-filter: brightness(1) blur(3px);
+    background-color: rgba($color: #fad0d0, $alpha: 0.5);
+
+    &::after{
+      content: '';
+      width: 150px;
+      height: 100px;
+      background-image: url("./Assets/Images/gif.gif");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      position: absolute;
+      right: -75px;
+      top: -40px;
+      // transform: translate(50%, 50%);
+    }
   }
 }
