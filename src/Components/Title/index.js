@@ -4,7 +4,7 @@ import './style.scss';
 
 function Title(props) {
     return (
-        <div>
+        <div className='container-title'>
             <h2>{ props.content }</h2>
         </div>
     );

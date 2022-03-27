@@ -1,7 +1,19 @@
 @media screen and (max-width: 1024px){
     .App{
         grid-template-columns: repeat(1, 100%);
-        .aside{
+
+        header{
+            .menu-mobile{
+                display: block;
+                width: 100%;
+                & > *{
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+
+        .aside, .container-title{
             display: none;
         }
 
@@ -32,7 +44,7 @@
     h1{
         font-size: 2rem;
     }
-    
+
     div.container{
         &::after{
             display: none;

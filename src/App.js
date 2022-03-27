@@ -4,8 +4,9 @@
 /*########*/import { Routes, Route } from 'react-router-dom';
 
 /*########*//*-----===== COMPONENTES =====----- */
-/*########*/import Aside from './Components/Aside';
 /*########*/import Title from './Components/Title';
+import MenuDesktop from './Components/Menu/MenuDesktop';
+import MenuMobile from './Components/Menu/MenuMobile';
 
 /*########*//*-----===== PAGINAS =====----- */
 /*########*/import Home from './Pages/Home';
@@ -20,9 +21,10 @@ function App() {
     <div className="App">
       <header>
         <Title content="Raylana Soares"/>
+        <MenuMobile />
       </header>
       <div className='aside'>
-        <Aside />
+        <MenuDesktop />
       </div>
       <main>
         <Routes>
