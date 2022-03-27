@@ -5,6 +5,7 @@
 
 /*########*//*-----===== COMPONENTES =====----- */
 /*########*/import Aside from './Components/Aside';
+/*########*/import Title from './Components/Title';
 
 /*########*//*-----===== PAGINAS =====----- */
 /*########*/import Home from './Pages/Home';
@@ -13,9 +14,12 @@
 import './App.scss';
 
 function App() {
+
   return (
     <div className="App">
-      <header></header>
+      <header>
+        <Title content="Raylana Soares"/>
+      </header>
       <div className='aside'>
         <Aside />
       </div>
