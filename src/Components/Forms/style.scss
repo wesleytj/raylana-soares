@@ -1,0 +1,52 @@
+.container-forms form{
+    max-width: 760px;
+    width: 100%;
+    height: 90%;
+    padding: 4% 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    backdrop-filter: brightness(1) blur(3px);
+    background-color: rgba($color: #fad0d0, $alpha: 0.5);
+}
+
+label{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Courier New', serif;
+}
+
+form input{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Courier New', serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+textarea{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Courier New', serif;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    max-width: 200px;
+    padding: 10px 0;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    background-color: #fad0d0;
+}
