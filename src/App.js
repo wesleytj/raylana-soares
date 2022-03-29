@@ -11,6 +11,8 @@ import MenuMobile from './Components/Menu/MenuMobile';
 /*########*//*-----===== PAGINAS =====----- */
 /*########*/import Home from './Pages/Home';
 /*########*/import About from './Pages/About';
+/*########*/import Services from './Pages/Services';
+
 
 import './App.scss';
 import './Responsive.scss';
@@ -30,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Services" element={<Services />} />
         </Routes>
       </main>
       <footer></footer>
