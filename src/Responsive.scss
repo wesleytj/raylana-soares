@@ -1,53 +1,127 @@
-@media screen and (max-width: 1024px){
-    .App{
+@media screen and (max-width: 1024px) {
+    .App {
         grid-template-columns: repeat(1, 100%);
 
-        header{
-            .menu-mobile{
+        header {
+            .menu-mobile {
                 display: block;
-                width: 100%;
-                & > *{
-                    flex-direction: row;
+                width  : 100%;
+
+                &>* {
+                    flex-direction : row;
                     justify-content: space-evenly;
                 }
             }
         }
 
-        .aside, .container-title{
+        .aside,
+        .container-title {
             display: none;
         }
 
-        main{
+        main {
             grid-column: 1 / 2;
 
         }
     }
 
-    div.container{
-        &::after{
-            width: 80px !important;
+    div.container {
+        &::after {
+            width : 80px !important;
             height: 50px !important;
-            top: -25px !important;
-            right: -40px !important;
+            top   : -25px !important;
+            right : -40px !important;
         }
     }
-    
+
 }
 
-@media screen and (max-width: 768px){
-    h1{
+@media screen and (max-width: 768px) {
+    h1 {
         font-size: 4rem;
+    }
+
+    div.container-about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-wrapper {
+        width: 100%;
+    }
+
+    .profile-wrapper {
+        width: 100%;
+
+        .profile {
+            width : 80px;
+            height: 80px;
+        }
+
+        .profile-txt {
+
+            &>div>p:last-of-type {
+                display: none;
+            }
+        }
+    }
+
+    .description-wrapper {
+        width: 100%;
+
+        &>p {
+            display: none;
+        }
+
+
     }
 }
 
-@media screen and (max-width: 500px){
-    h1{
+@media screen and (max-width: 500px) {
+    h1 {
         font-size: 2rem;
     }
 
-    div.container{
-        &::after{
+    div.container {
+        &::after {
             display: none;
+        }
+    }
+
+    .profile {
+        width : 60px !important;
+        height: 60px !important;
+    }
+
+    .profile-txt {
+
+        &>p {
+            font-size: 1.1rem !important;
+        }
+
+        &>div>p {
+            font-size: 0.7rem !important;
+        }
+    }
+
+    .description-wrapper {
+
+        &>div {
+            p {
+                font-size: .8rem;
+                max-width: 80%;
+                margin: 0 auto !important;
+
+                &:first-of-type {
+                    font-size: 1rem;
+                    margin-bottom: 10px !important;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-family: "Feel My Heart";
+                }
+            }
         }
     }
 }

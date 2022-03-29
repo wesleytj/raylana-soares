@@ -4,6 +4,7 @@
 }
 
 .profile-wrapper{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,6 +26,7 @@
         & > p{
             margin: 10px 0;
             font-weight: bold;
+            font-family: "Feel My Heart";
             font-size: 1.3rem;
         }
 
@@ -37,29 +39,43 @@
 }
 
 .description-wrapper{
+    width: 50%;
     display: flex;
-    justify-content: flex-end;
+    /*>>> Quando for colocado a foto dos certificados <<<*/
+    // justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
 
     & > div{
+        // display: flex;
+        // flex-direction: column;
         p{
-            margin: 10px 0;
-            font-weight: bold;
+            font-weight: lighter;
+            
+            &:first-of-type{
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            span{
+                font-weight: bold;
+                font-family: "Feel My Heart";
+            }
         }
     }
 
     & > div > div{
         width: 48%;
         height: 200px;
-        display: inline-block;
-        background-image: url("../../Assets/Images/certificado.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        padding: 10px;
+        // display: inline-block;
+        /*>>> Quando for colocado a foto dos certificados <<<*/
+        // background-image: url("../../Assets/Images/certificado.jpg");
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: top;
 
         &:last-of-type{
-            margin-left: 15px;
+            // margin-left: 15px;
         }
     }
 }
