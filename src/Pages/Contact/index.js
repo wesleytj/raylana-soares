@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Form from '../../Components/Forms';
+
 import './style.scss';
 
 function Contact() {
